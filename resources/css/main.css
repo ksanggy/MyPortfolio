@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Miss+Fajardose&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(238, 238, 238);
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(31, 29, 29);
+    height: 8vh;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav .logo {
+    font-family: 'Miss Fajardose', cursive;
+    letter-spacing: 10px;
+    font-size: 30px;
+    font-weight: 500;
+    color: rgb(238, 238, 238);
+}
+
+nav .nav-links {
+    display: flex;
+    width: 40%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav .nav-links li {
+    list-style: none;
+}
+
+nav .nav-links li>a {
+    text-decoration: none;
+    color: rgb(238, 238, 238);
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 3px;
+    font-size: 14px;
+}
+
+.nav-links li.active a {
+    color: rgb(255, 251, 25);
+}
+
+.intro {
+    height: 100vh;
+    background-image: url(../img/profile_main_img.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: grayscale(90%);
+    opacity: 1;
+}
+
+.intro:hover {
+    filter: grayscale(0%);
+    mask-size: 20px;
+    mask-clip: 50px;
+}
+
+.intro .name {
+    height: 100vh;
+    font-family: 'Miss Fajardose', cursive;
+    font-size: 80px;
+    font-weight: 600;
+    letter-spacing: 5vh;
+    text-align: center;
+    padding: 35vh 0;
+    position: relative;
+    z-index: 100;
+    color: rgb(238, 238, 238);
+}
+
+.intro .name::first-letter {
+    color: rgb(59, 61, 66);
+}
+
+.intro .map-group {
+    display: flex;
+    margin: -155vh 0 0 0;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+    height: 10vh;
+    opacity: 0.5;
+}
+
+.map-group img {
+    height: 30vh;
+}
+
+.about {
+    height: 100vh;
+    background-color: rgb(2, 2, 2);
+    text-align: center;
+}
+
+.about-me {
+    font-size: 45px;
+    color: rgb(238, 238, 238);
+    font-family: 'Miss Fajardose', cursive;
+    letter-spacing: 10px;
+    font-weight: 600;
+    padding: 30vh 0;
+}
+
+.about-me::first-letter {
+    color: rgb(255, 251, 25);
+}
+
+.skills {
+    margin-top: -30vh;
+    background-color: black;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.skills>div:nth-child(1) {
+    position: absolute;
+    margin-top: 30vh;
+    margin-left: 50vw;
+    width: 10vw;
+    height: 3vh;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    font-size: 55px;
+    letter-spacing: 5px;
+    color: rgb(255, 251, 25);
+}
+
+.skills>div:nth-child(2) {
+    position: absolute;
+    margin-top: 40vh;
+    margin-left: 6vw;
+    width: 43vw;
+    height: 3vh;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    font-size: 45px;
+    letter-spacing: 5px;
+    color: rgb(255, 251, 25);
+}
+
+.skills>div:nth-child(3) {
+    position: absolute;
+    margin-top: 25vh;
+    margin-left: 20vw;
+    width: 20vw;
+    height: 3vh;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    font-size: 30px;
+    letter-spacing: 5px;
+    color: rgb(255, 251, 25);
+}
+
+.skills>div:nth-child(4) {
+    position: absolute;
+    margin-top: 35vh;
+    margin-left: 70vw;
+    width: 15vw;
+    height: 3vh;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    font-size: 35px;
+    letter-spacing: 5px;
+    color: rgb(255, 251, 25);
+}
+
+.skills>div:nth-child(5) {
+    position: absolute;
+    margin-top: 15vh;
+    margin-left: 55vw;
+    width: 15vw;
+    height: 3vh;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    font-size: 38px;
+    letter-spacing: 5px;
+    color: rgb(255, 251, 25);
+}
+
+.skills>div:nth-child(6) {
+    position: absolute;
+    margin-top: 55vh;
+    margin-left: 75vw;
+    width: 10vw;
+    height: 3vh;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    font-size: 48px;
+    letter-spacing: 5px;
+    color: rgb(255, 251, 25);
+}
+
+.skills>div:nth-child(7) {
+    position: absolute;
+    margin-top: 52vh;
+    margin-left: 36vw;
+    width: 10vw;
+    height: 3vh;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    font-size: 48px;
+    letter-spacing: 5px;
+    color: rgb(255, 251, 25);
+}
+
+.work {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(238, 238, 238);
+}
+
+.work .card {
+    width: 20vw;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(63, 61, 61);
+    color: rgb(238, 238, 238);
+    border-radius: 20px;
+    box-shadow: inset;
+}
+
+.work .card-header,
+.card-body,
+.card-footer {
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 5px;
+    text-align: center;
+}
+
+.card:nth-child(1) .card-body {
+    width: 20vw;
+    height: 20vh;
+    background-image: url(../img/MindSphere_Intro.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.card:nth-child(2) .card-body {
+    width: 20vw;
+    height: 20vh;
+    background-image: url(../img/PMS_Dashboard_Img.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.card:nth-child(3) .card-body {
+    width: 20vw;
+    height: 20vh;
+    background-image: url(../img/MAS_IRB_IMG.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.card:nth-child(4) .card-body {
+    width: 20vw;
+    height: 20vh;
+    background-image: url(../img/Mebica_AI_IMG.PNG);
+    background-size: 85%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.projects {
+    height: 100vh;
+    background-color: rgb(63, 61, 61);
+}
+
+.projects:active {
+    color: rgb(255, 251, 25);
+}
